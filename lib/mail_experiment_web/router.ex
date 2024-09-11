@@ -17,9 +17,9 @@ defmodule MailExperimentWeb.Router do
   scope "/", MailExperimentWeb do
     pipe_through :browser
 
-    live "/mail", MailLive.Index, :index
+    live "/", MailLive.Index, :index
 
-    get "/", PageController, :home
+    # get "/", PageController, :home
   end
 
   # Other scopes may use custom stacks.
